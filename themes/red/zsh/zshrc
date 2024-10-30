@@ -4,7 +4,7 @@ export VISUAL='nvim'
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-PS1='[\u@\h \W]\$ '
+PS1='%F{red}%n@%m%f %1~ $ '
 
 alias ls='ls --color=auto'
 
