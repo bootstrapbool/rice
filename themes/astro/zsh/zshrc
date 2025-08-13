@@ -1,0 +1,13 @@
+export EDITOR='vi'
+export VISUAL='nvim'
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+PS1='%n@%m %1~ $ '
+
+alias ls='ls --color=auto'
+
+if [[ `tty` == '/dev/pts/0' ]]; then
+    neofetch --ascii_colors 1 1 1 1 1 1 --colors 1 1 1 1 1 1 --color_blocks off
+fi
